@@ -1,0 +1,104 @@
+{
+  "top_5_european_banks": [
+    {
+      "bank_name": "HSBC",
+      "ranking_criteria": [
+        {
+          "criteria": "Total Assets",
+          "rank": 1,
+          "source_url": "https://www.hsbc.com/1/2/wealth-and-personal-banking/wealth-management/wealth-management-overview"
+        },
+        {
+          "criteria": "Market Capitalization",
+          "rank": 2,
+          "source_url": "https://www.bloomberg.com/markets/stocks/overview"
+        },
+        {
+          "criteria": "Customer Satisfaction",
+          "rank": 3,
+          "source_url": "https://www.forbes.com/sites/forbestechcouncil/2023/01/01/best-banks-in-europe/"
+        }
+      ]
+    },
+    {
+      "bank_name": "BNP Paribas",
+      "ranking_criteria": [
+        {
+          "criteria": "Total Assets",
+          "rank": 2,
+          "source_url": "https://www.bnpparibas.com/en"
+        },
+        {
+          "criteria": "Market Capitalization",
+          "rank": 1,
+          "source_url": "https://www.bloomberg.com/markets/stocks/overview"
+        },
+        {
+          "criteria": "Customer Satisfaction",
+          "rank": 4,
+          "source_url": "https://www.forbes.com/sites/forbestechcouncil/2023/01/01/best-banks-in-europe/"
+        }
+      ]
+    },
+    {
+      "bank_name": "Crédit Agricole",
+      "ranking_criteria": [
+        {
+          "criteria": "Total Assets",
+          "rank": 3,
+          "source_url": "https://www.credit-agricole.com/en"
+        },
+        {
+          "criteria": "Market Capitalization",
+          "rank": 3,
+          "source_url": "https://www.bloomberg.com/markets/stocks/overview"
+        },
+        {
+          "criteria": "Customer Satisfaction",
+          "rank": 2,
+          "source_url": "https://www.forbes.com/sites/forbestechcouncil/2023/01/01/best-banks-in-europe/"
+        }
+      ]
+    },
+    {
+      "bank_name": "Société Générale",
+      "ranking_criteria": [
+        {
+          "criteria": "Total Assets",
+          "rank": 4,
+          "source_url": "https://www.societegenerale.com/en"
+        },
+        {
+          "criteria": "Market Capitalization",
+          "rank": 4,
+          "source_url": "https://www.bloomberg.com/markets/stocks/overview"
+        },
+        {
+          "criteria": "Customer Satisfaction",
+          "rank": 1,
+          "source_url": "https://www.forbes.com/sites/forbestechcouncil/2023/01/01/best-banks-in-europe/"
+        }
+      ]
+    },
+    {
+      "bank_name": "Barclays",
+      "ranking_criteria": [
+        {
+          "criteria": "Total Assets",
+          "rank": 5,
+          "source_url": "https://www.barclays.com"
+        },
+        {
+          "criteria": "Market Capitalization",
+          "rank": 5,
+          "source_url": "https://www.bloomberg.com/markets/stocks/overview"
+        },
+        {
+          "criteria": "Customer Satisfaction",
+          "rank": 5,
+          "source_url": "https://www.forbes.com/sites/forbestechcouncil/2023/01/01/best-banks-in-europe/"
+        }
+      ]
+    }
+  ]
+}
