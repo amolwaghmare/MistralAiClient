@@ -3,8 +3,6 @@ package com.arhs.ai.poc.service;
 import com.arhs.ai.poc.mistral.client.model.*;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import jdk.jfr.RecordingState;
-import org.apache.logging.log4j.message.Message;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.*;
 import org.springframework.stereotype.Service;
@@ -37,7 +35,7 @@ public class MistralService {
     public String callMistralService(String query) throws JsonProcessingException {
         ChatCompletionRequest request = new ChatCompletionRequest();
         request.setTemperature(BigDecimal.valueOf(0.7));
-        request.setModel("mistral-small-latest");
+        request.setModel("mistral-large-latest");
         request.setTopP(BigDecimal.ONE);
         request.setMaxTokens(150);
 

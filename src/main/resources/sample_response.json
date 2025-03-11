@@ -1,104 +1,114 @@
 {
-  "top_5_european_banks": [
+  "banks": [
     {
-      "bank_name": "HSBC",
+      "name": "Bank A",
       "ranking_criteria": [
         {
-          "criteria": "Total Assets",
-          "rank": 1,
-          "source_url": "https://www.hsbc.com/1/2/wealth-and-personal-banking/wealth-management/wealth-management-overview"
+          "criteria": "Assets",
+          "rank": 1
         },
         {
           "criteria": "Market Capitalization",
-          "rank": 2,
-          "source_url": "https://www.bloomberg.com/markets/stocks/overview"
+          "rank": 2
+        },
+        {
+          "criteria": "Profitability",
+          "rank": 3
         },
         {
           "criteria": "Customer Satisfaction",
-          "rank": 3,
-          "source_url": "https://www.forbes.com/sites/forbestechcouncil/2023/01/01/best-banks-in-europe/"
+          "rank": 4
         }
-      ]
+      ],
+      "source_url": "https://example.com/source1"
     },
     {
-      "bank_name": "BNP Paribas",
+      "name": "Bank B",
       "ranking_criteria": [
         {
-          "criteria": "Total Assets",
-          "rank": 2,
-          "source_url": "https://www.bnpparibas.com/en"
+          "criteria": "Assets",
+          "rank": 2
         },
         {
           "criteria": "Market Capitalization",
-          "rank": 1,
-          "source_url": "https://www.bloomberg.com/markets/stocks/overview"
+          "rank": 1
+        },
+        {
+          "criteria": "Profitability",
+          "rank": 2
         },
         {
           "criteria": "Customer Satisfaction",
-          "rank": 4,
-          "source_url": "https://www.forbes.com/sites/forbestechcouncil/2023/01/01/best-banks-in-europe/"
+          "rank": 3
         }
-      ]
+      ],
+      "source_url": "https://example.com/source2"
     },
     {
-      "bank_name": "Crédit Agricole",
+      "name": "Bank C",
       "ranking_criteria": [
         {
-          "criteria": "Total Assets",
-          "rank": 3,
-          "source_url": "https://www.credit-agricole.com/en"
+          "criteria": "Assets",
+          "rank": 3
         },
         {
           "criteria": "Market Capitalization",
-          "rank": 3,
-          "source_url": "https://www.bloomberg.com/markets/stocks/overview"
+          "rank": 3
+        },
+        {
+          "criteria": "Profitability",
+          "rank": 1
         },
         {
           "criteria": "Customer Satisfaction",
-          "rank": 2,
-          "source_url": "https://www.forbes.com/sites/forbestechcouncil/2023/01/01/best-banks-in-europe/"
+          "rank": 2
         }
-      ]
+      ],
+      "source_url": "https://example.com/source3"
     },
     {
-      "bank_name": "Société Générale",
+      "name": "Bank D",
       "ranking_criteria": [
         {
-          "criteria": "Total Assets",
-          "rank": 4,
-          "source_url": "https://www.societegenerale.com/en"
+          "criteria": "Assets",
+          "rank": 4
         },
         {
           "criteria": "Market Capitalization",
-          "rank": 4,
-          "source_url": "https://www.bloomberg.com/markets/stocks/overview"
+          "rank": 4
+        },
+        {
+          "criteria": "Profitability",
+          "rank": 4
         },
         {
           "criteria": "Customer Satisfaction",
-          "rank": 1,
-          "source_url": "https://www.forbes.com/sites/forbestechcouncil/2023/01/01/best-banks-in-europe/"
+          "rank": 1
         }
-      ]
+      ],
+      "source_url": "https://example.com/source4"
     },
     {
-      "bank_name": "Barclays",
+      "name": "Bank E",
       "ranking_criteria": [
         {
-          "criteria": "Total Assets",
-          "rank": 5,
-          "source_url": "https://www.barclays.com"
+          "criteria": "Assets",
+          "rank": 5
         },
         {
           "criteria": "Market Capitalization",
-          "rank": 5,
-          "source_url": "https://www.bloomberg.com/markets/stocks/overview"
+          "rank": 5
+        },
+        {
+          "criteria": "Profitability",
+          "rank": 5
         },
         {
           "criteria": "Customer Satisfaction",
-          "rank": 5,
-          "source_url": "https://www.forbes.com/sites/forbestechcouncil/2023/01/01/best-banks-in-europe/"
+          "rank": 5
         }
-      ]
+      ],
+      "source_url": "https://example.com/source5"
     }
   ]
 }

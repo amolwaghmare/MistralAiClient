@@ -1,12 +1,14 @@
 package com.arhs.ai.poc.controller;
 
 
+import com.arhs.ai.poc.service.GCustomSearchService;
 import com.arhs.ai.poc.service.MistralService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
 
 
 @RestController
@@ -15,6 +17,9 @@ public class MistralController {
 
     @Autowired
     private MistralService mistralService;
+
+    @Autowired
+    private GCustomSearchService gCustomSearchService;
 
     @RequestMapping(value="/login", method = RequestMethod.GET)
     public String showLoginPage(ModelMap model){
@@ -29,6 +34,17 @@ public class MistralController {
 
 
     return result;
+
+    }
+
+
+    @RequestMapping(value="/googleCustomSearch", method = RequestMethod.GET)
+    public ArrayList googleCustomSearch(@RequestParam String query) throws JsonProcessingException {
+
+
+        return gCustomSearchService.callGoogleCustomSearchService(query);
+
+
 
     }
 
