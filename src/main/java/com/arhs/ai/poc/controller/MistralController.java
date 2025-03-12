@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
+import java.util.LinkedHashMap;
 
 
 @RestController
@@ -39,13 +39,23 @@ public class MistralController {
 
 
     @RequestMapping(value="/googleCustomSearch", method = RequestMethod.GET)
-    public ArrayList googleCustomSearch(@RequestParam String query) throws JsonProcessingException {
+    public LinkedHashMap googleCustomSearch(@RequestParam String query) throws JsonProcessingException {
 
 
         return gCustomSearchService.callGoogleCustomSearchService(query);
 
-
+//return "<html>"+gCustomSearchService.callGoogleCustomSearchService(query);
 
     }
 
+
+    @RequestMapping(value="/testThyleaf", method = RequestMethod.GET)
+    public String testThyleaf(@RequestParam String query) throws JsonProcessingException {
+
+
+        return "testView";
+
+
+
+    }
 }
