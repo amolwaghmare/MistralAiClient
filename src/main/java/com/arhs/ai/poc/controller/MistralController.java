@@ -4,14 +4,18 @@ package com.arhs.ai.poc.controller;
 import com.arhs.ai.poc.service.GCustomSearchService;
 import com.arhs.ai.poc.service.MistralService;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.LinkedHashMap;
 
 
-@RestController
+@Controller
 
 public class MistralController {
 
@@ -49,12 +53,32 @@ public class MistralController {
     }
 
 
-    @RequestMapping(value="/testThyleaf", method = RequestMethod.GET)
-    public String testThyleaf(@RequestParam String query) throws JsonProcessingException {
 
+    @GetMapping(value="/testThyleaf")
+    public ModelAndView testThyleaf(@RequestParam String api, @RequestParam String query) throws JsonProcessingException {
+        ModelAndView  model = new ModelAndView("testView");
+        model.addObject("api", api);
+        model.addObject("query", query);
+        String result = null;
+        if(api.equalsIgnoreCase("mistral")){
+            result = mistralService.callMistralService(query);
 
-        return "testView";
+        } else if(api.equalsIgnoreCase("GoogleCustomSearch")){
+            result = gCustomSearchService.callGoogleCustomSearchService(query).toString();
 
+        }
+        String prettyResult = null;
+        try {
+            ObjectMapper mapper = new ObjectMapper().enable(SerializationFeature.INDENT_OUTPUT);
+            Object jsonObject = mapper.readValue(result, Object.class);
+            String prettyJson = mapper.writeValueAsString(jsonObject);
+            prettyResult = prettyJson;
+        } catch (JsonProcessingException e) {
+            prettyResult = result;
+        }
+            model.addObject("result", prettyResult);
+
+        return model;
 
 
     }
