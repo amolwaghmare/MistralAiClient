@@ -89,7 +89,7 @@ public class MistralService {
         HashMap hashMapChoices = (HashMap) choices.get(0);
         HashMap hashMapMessage = (HashMap) hashMapChoices.get("message");
         String content1 = (String) hashMapMessage.get("content");
-        return re.getBody();
+        return content1;
     }
 
 

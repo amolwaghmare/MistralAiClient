@@ -1,6 +1,7 @@
 package com.arhs.ai.poc.controller;
 
 
+import com.arhs.ai.poc.service.BraveSearchService;
 import com.arhs.ai.poc.service.GCustomSearchService;
 import com.arhs.ai.poc.service.MistralService;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -24,6 +25,9 @@ public class MistralController {
 
     @Autowired
     private GCustomSearchService gCustomSearchService;
+
+    @Autowired
+    private BraveSearchService braveSearchService;
 
     @RequestMapping(value="/login", method = RequestMethod.GET)
     public String showLoginPage(ModelMap model){
@@ -65,6 +69,9 @@ public class MistralController {
 
         } else if(api.equalsIgnoreCase("GoogleCustomSearch")){
             result = gCustomSearchService.callGoogleCustomSearchService(query).toString();
+
+        } else if(api.equalsIgnoreCase("bravesearch")){
+            result = braveSearchService.callBraveSearch(query).toString();
 
         }
         String prettyResult = null;

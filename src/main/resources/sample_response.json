@@ -1,114 +1,119 @@
 {
-  "banks": [
+  "sources": [
+    "Automotive industry reports",
+    "Consumer Reports",
+    "J.D. Power",
+    "Car and Driver",
+    "Edmunds",
+    "Kelley Blue Book",
+    "Motor Trend",
+    "Car Sales Statistics",
+    "AutoTrader",
+    "Consumer Reports Annual Auto Survey",
+    "Global Car Brands Ranking",
+    "Top Gear",
+    "Bloomberg",
+    "Forbes",
+    "Automotive News"
+  ],
+  "top_10_car_brands": [
     {
-      "name": "Bank A",
-      "ranking_criteria": [
-        {
-          "criteria": "Assets",
-          "rank": 1
-        },
-        {
-          "criteria": "Market Capitalization",
-          "rank": 2
-        },
-        {
-          "criteria": "Profitability",
-          "rank": 3
-        },
-        {
-          "criteria": "Customer Satisfaction",
-          "rank": 4
-        }
-      ],
-      "source_url": "https://example.com/source1"
+      "brand": "Toyota",
+      "ranking": 1
     },
     {
-      "name": "Bank B",
-      "ranking_criteria": [
-        {
-          "criteria": "Assets",
-          "rank": 2
-        },
-        {
-          "criteria": "Market Capitalization",
-          "rank": 1
-        },
-        {
-          "criteria": "Profitability",
-          "rank": 2
-        },
-        {
-          "criteria": "Customer Satisfaction",
-          "rank": 3
-        }
-      ],
-      "source_url": "https://example.com/source2"
+      "brand": "Ford",
+      "ranking": 2
     },
     {
-      "name": "Bank C",
-      "ranking_criteria": [
-        {
-          "criteria": "Assets",
-          "rank": 3
-        },
-        {
-          "criteria": "Market Capitalization",
-          "rank": 3
-        },
-        {
-          "criteria": "Profitability",
-          "rank": 1
-        },
-        {
-          "criteria": "Customer Satisfaction",
-          "rank": 2
-        }
-      ],
-      "source_url": "https://example.com/source3"
+      "brand": "Honda",
+      "ranking": 3
     },
     {
-      "name": "Bank D",
-      "ranking_criteria": [
-        {
-          "criteria": "Assets",
-          "rank": 4
-        },
-        {
-          "criteria": "Market Capitalization",
-          "rank": 4
-        },
-        {
-          "criteria": "Profitability",
-          "rank": 4
-        },
-        {
-          "criteria": "Customer Satisfaction",
-          "rank": 1
-        }
-      ],
-      "source_url": "https://example.com/source4"
+      "brand": "Chevrolet",
+      "ranking": 4
     },
     {
-      "name": "Bank E",
-      "ranking_criteria": [
-        {
-          "criteria": "Assets",
-          "rank": 5
-        },
-        {
-          "criteria": "Market Capitalization",
-          "rank": 5
-        },
-        {
-          "criteria": "Profitability",
-          "rank": 5
-        },
-        {
-          "criteria": "Customer Satisfaction",
-          "rank": 5
-        }
-      ],
-      "source_url": "https://example.com/source5"
+      "brand": "Nissan",
+      "ranking": 5
+    },
+    {
+      "brand": "BMW",
+      "ranking": 6
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "ranking": 7
+    },
+    {
+      "brand": "Tesla",
+      "ranking": 8
+    },
+    {
+      "brand": "Hyundai",
+      "ranking": 9
+    },
+    {
+      "brand": "Kia",
+      "ranking": 10
+    }
+  ],
+  "sources_used": [
+    {
+      "source": "Consumer Reports",
+      "url": "https://www.consumerreports.org"
+    },
+    {
+      "source": "J.D. Power",
+      "url": "https://www.jdpower.com"
+    },
+    {
+      "source": "Car and Driver",
+      "url": "https://www.caranddriver.com"
+    },
+    {
+      "source": "Edmunds",
+      "url": "https://www.edmunds.com"
+    },
+    {
+      "source": "Kelley Blue Book",
+      "url": "https://www.kbb.com"
+    },
+    {
+      "source": "Motor Trend",
+      "url": "https://www.motortrend.com"
+    },
+    {
+      "source": "Car Sales Statistics",
+      "url": "https://www.carsalesstatistics.com"
+    },
+    {
+      "source": "AutoTrader",
+      "url": "https://www.autotrader.com"
+    },
+    {
+      "source": "Consumer Reports Annual Auto Survey",
+      "url": "https://www.consumerreports.org/auto-survey"
+    },
+    {
+      "source": "Global Car Brands Ranking",
+      "url": "https://www.globalcarbrandsranking.com"
+    },
+    {
+      "source": "Top Gear",
+      "url": "https://www.topgear.com"
+    },
+    {
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com"
+    },
+    {
+      "source": "Forbes",
+      "url": "https://www.forbes.com"
+    },
+    {
+      "source": "Automotive News",
+      "url": "https://www.autonews.com"
     }
   ]
 }
